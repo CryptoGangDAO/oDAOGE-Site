@@ -7,10 +7,10 @@
   "version": "1.0.0",
   "description": "CGDAO Static Temp Site",
   "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "css:scss": "node-sass --output-style compressed -o dist src/scss"
-    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist src/scss"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/cryptogangdao/static-site.git"
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/cryptogangdao/static-site/issues"
   },
-  "homepage": "https://github.com/cryptogangdao/static-site#readme"
+  "homepage": "https://github.com/cryptogangdao/static-site#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
 }
