@@ -35,6 +35,20 @@ a {
 	margin: 5px;
 	padding: 5px;
 }
+a:hover {
+	color: #F7931A;
+	transition: color 150ms ease-in-out;
+}
+.a-white {
+	color: #EEE;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px;
+}
+.a-white:hover {
+	color: #509fd6;
+	transition: color 150ms ease-in-out;
+}
 button {
 	border: 3px solid;
 	border-color: #EEE;
@@ -87,7 +101,7 @@ button:hover {
 	}
 }
 .buy-button:hover {
-	color: #509fd6;
+	color: #F7931A;
 }
 .container {
 	display: flex;
