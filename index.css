@@ -7,9 +7,6 @@ h1 {
 	color: #509fd6;
 	font-size: 56px;
 	padding: 50px;
-	@media(max-width: 600px) {
-		font-size: 16px;
-	}
 }
 h2 {
 	color: #509fd6;
@@ -27,10 +24,6 @@ img {
 	border-radius: 20px;
 	margin: 10px;
 	padding: 10px;
-	@media(max-width: 600px) {
-		height: 125px;
-		width: 125px;
-	}
 }
 a {
 	color: #509fd6;
@@ -56,12 +49,6 @@ button {
 	padding: 10px;
 	justify-content: center;
 	align-items: center;
-	@media (max-width: 600px) {
-		margin: 5px;
-		height: 50px;
-		padding: 10px;
-		font-size: 16px;
-	}
 }
 ul {
 	color: #eee;
@@ -91,12 +78,6 @@ ul {
 	padding: 10px;
 	justify-content: center;
 	align-items: center;
-	@media (max-width: 600px) {
-		margin: 5px;
-		height: 50px;
-		padding: 10px;
-		font-size: 16px;
-	}
 }
 .container {
 	display: flex;
@@ -126,6 +107,7 @@ ul {
 }
 .row-container { 
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
@@ -146,13 +128,86 @@ ul {
 .footer-container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	font-size: 20px;
 }
 .header-container {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 20px;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+}
+/* Hide the mobile image by default */
+.mobile-image {
+  display: none;
+}
+
+/* Show the mobile image on screens with a maximum width of 767px */
+@media only screen and (max-width: 600px) {
+	.mobile-image {
+		display: block;
+		border-radius: 20px;
+		margin: 5px;
+		padding: 5px;
+		height: 150px;
+		width: 150px;
+	}
+	.mobile-row-container {
+		display: flex;
+		flex-direction: space-between;
+		justify-content: center;
+	}
+	.desktop-image {
+		display: none;
+	}
+}
+
+	/* Show the desktop image on screens with a minimum width of 768px */
+@media only screen and (min-width: 601px) {
+	.desktop-image {
+		display: block;
+		border-radius: 20px;
+		margin: 10px;
+		padding: 10px;
+	}
+	.mobile-image {
+		display: none;
+	}
+}
+
+@media(max-width: 600px) {
+	body {
+		line-height: 1.25em;
+		background: linear-gradient(180deg, rgba(87,59,180,1) 0%, rgba(121,68,179,1) 46%, rgba(146,73,175,1) 100%);
+	}
+	h1 {
+		font-size: 22px;
+	}
+	p {
+		margin: 5px;
+		padding: 5px;
+	}
+	img {
+		height: 150px;
+		width: 150px;
+		padding: 5px;
+		margin: 5px;
+	}
+	.container {
+		margin: 0%;
+	}
+	.header-container {
+		margin-bottom: 10px;
+		justify-content: center;
+	}
+	.footer {
+		display: none; 
+	}
+	.row-container {
+		justify-content: center;
+	}
 }
