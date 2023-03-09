@@ -239,7 +239,6 @@ ul {
 	}
 	.mobile-buy-button {
 		display: flex;
-		border: 3px solid;
 		border-radius: 20px;
 		background-color: #EEE;
 		color: #509fd6;
