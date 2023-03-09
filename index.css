@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Futura;
-	src: local('Futura-CondensedMedium');
+	src: url('Futura-CondensedMedium.otf');
 }
 body {
 	position: absolute;
@@ -8,7 +8,7 @@ body {
 	background: linear-gradient(180deg, rgba(87,59,180,1) 0%, rgba(121,68,179,1) 46%, rgba(146,73,175,1) 100%);
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: 'Futura-CondensedMedium';
+	font-family: 'Futura-CondensedMedium', Arial, sans-serif;
 	line-height: 1.25em;
 }
 h1 {
