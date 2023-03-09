@@ -1,3 +1,7 @@
+@font-face {
+	font-family: Futura;
+	src: local('Futura-CondensedMedium');
+}
 body {
 	position: absolute;
 	width: 100%;
