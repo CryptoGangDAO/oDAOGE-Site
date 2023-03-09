@@ -8,7 +8,7 @@ body {
 	background: linear-gradient(180deg, rgba(87,59,180,1) 0%, rgba(121,68,179,1) 46%, rgba(146,73,175,1) 100%);
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: 'Futura-CondensedMedium', Arial, sans-serif;
+	font-family: 'Futura-CondensedMedium', Futura, sans-serif;
 	line-height: 1.25em;
 }
 h1 {
@@ -43,8 +43,10 @@ img:hover {
 a {
 	color: #509fd6;
 	text-decoration: none;
+	font-family: 'Futura-CondensedMedium', Futura, sans-serif;
 	margin: 5px;
 	padding: 5px;
+	text-align: center;
 }
 a:hover {
 	color: #F7931A;
@@ -56,15 +58,15 @@ button {
 	border-color: #EEE;
 	border-radius: 20px;
 	background-color: transparent;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	color: #EEE;
 	font-size: 24px;
 	font-weight: 500;
 	width: 500px;	
 	height: 50px;
-	margin: 10px;
-	padding: 10px;
-	justify-content: center;
-	align-items: center;
+
 }
 ul {
 	color: #eee;
@@ -84,18 +86,15 @@ ul {
 	cursor: pointer;
 }
 .buy-button {
-	border: 3px solid;
 	border-radius: 20px;
 	background-color: #EEE;
-	color: #509fd6;
-	font-size: 24px;
-	font-weight: 500;
-	width: 500px;	
-	height: 50px;
-	margin: 10px;
-	padding: 10px;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	color: #509fd6;
+	font-size: 24px;
+	width: 500px;	
+	height: 50px;
 }
 .container {
 	display: flex;
