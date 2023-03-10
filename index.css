@@ -2,7 +2,7 @@
 	font-family: 'Futura-CondensedMedium';
 	src: url('Futura-CondensedMedium.otf');
 }
-body {
+html, body {
 	position: absolute;
 	width: 100%;
 	background: linear-gradient(180deg, rgba(87,59,180,1) 0%, rgba(121,68,179,1) 46%, rgba(146,73,175,1) 100%);
@@ -139,6 +139,7 @@ ul {
 	left: 0;
 	bottom: 0;
 	text-align: center;
+	align-items: center;
 	padding: 20px;
 }
 .footer-container {
@@ -188,6 +189,10 @@ ul {
 
 
 @media only screen and (max-width: 600px) {
+	html, body {
+		height: auto;
+		width: auto;
+	}
 	a {
 		font-size: 28px;
 	}
@@ -199,7 +204,7 @@ ul {
 		line-height: 1.25em;
 	}
 	p {
-		font-size: 28px;
+		font-size: 32px;
 		text-align: center;
 		line-height: 1.25em;
 	}
@@ -277,5 +282,14 @@ ul {
 	.socials-img {
 		height: 50px;
 		width: 50px;
+	}
+	.footer-container {
+		margin: auto;
+		padding: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 60%;
+		
 	}
 }
