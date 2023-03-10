@@ -189,7 +189,7 @@ ul {
 
 
 @media only screen and (max-width: 600px) {
-	html, body {
+	body {
 		height: auto;
 		width: auto;
 	}
@@ -209,9 +209,9 @@ ul {
 		line-height: 1.25em;
 	}
 	img {
-		height: 75px;
 		padding: 5px;
 		margin: 5px;
+		max-width: 400px;
 	}
 	ul {
 		font-size: 26px;
@@ -250,7 +250,7 @@ ul {
 		color: #509fd6;
 		font-size: 24px;
 		font-weight: 500;
-		width: 500px;	
+		max-width: 400px;	
 		height: 50px;
 		margin: 10px;
 		padding: 10px;
@@ -266,7 +266,7 @@ ul {
 		color: #EEE;
 		font-size: 24px;
 		font-weight: 500;
-		width: 500px;	
+		width: 400px;	
 		height: 50px;
 		margin: 10px;
 		padding: 10px;
@@ -289,7 +289,6 @@ ul {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		max-width: 60%;
 		
 	}
 }
