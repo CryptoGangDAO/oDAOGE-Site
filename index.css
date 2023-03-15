@@ -3,8 +3,6 @@
 	src: url('Futura-CondensedMedium.otf');
 }
 html, body {
-	position: absolute;
-	width: 99%;
 	background: linear-gradient(180deg, rgba(87,59,180,1) 0%, rgba(121,68,179,1) 46%, rgba(146,73,175,1) 100%);
 	background-attachment: fixed;
 	background-size: cover;
@@ -103,7 +101,6 @@ ul {
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	max-width: 95%
 }
 .container-no-margin {
 	display: flex;
@@ -188,6 +185,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
 	body {
+		position: fixed;
 		width: 100%;	
 	}
 	a {
@@ -202,7 +200,7 @@ ul {
 		line-height: 1.25em;
 	}
 	p {
-		font-size: 22px;
+		font-size: 20px;
 		text-align: center;
 		line-height: 1.25em;
 	}
@@ -212,14 +210,11 @@ ul {
 		max-width: 375px;
 	}
 	ul {
-		font-size: 22px;
+		font-size: 20px;
 		line-height: 1.25em;
 	}
 	button {
 		display: none;
-	}
-	.container {
-		max-width: 95%
 	}
 	.header-container {
 		margin-bottom: 10px;
