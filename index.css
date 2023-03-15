@@ -185,7 +185,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
 	body {
-		position: fixed;
+		position: absolute;
 		width: 100%;	
 	}
 	a {
