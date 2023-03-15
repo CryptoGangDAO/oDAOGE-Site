@@ -10,6 +10,8 @@ html, body {
 	background-size: cover;
 	font-family: 'Futura-CondensedMedium', Futura, sans-serif;
 	line-height: 1.25em;
+	margin: 0;
+	padding: 0;
 }
 h1 {
 	color: #509fd6;
